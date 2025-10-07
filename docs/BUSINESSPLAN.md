@@ -1,4 +1,4 @@
-# AI Transcription & Smart Notes App - Business Plan
+# SmartScribe - Business Plan
 
 ## 1. Executive Summary
 Our app turns audio recordings into accurate, structured notes using AI. Users can record meetings, lectures, or interviews and instantly get actionable summaries, key takeaways, and organized sections.
