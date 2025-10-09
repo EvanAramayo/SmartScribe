@@ -11,7 +11,7 @@ We pledge to act and interact in ways that contribute to an open, welcoming, div
 
 ### 2. Decisions
 
- Decisions will be made by consensus whenever possible. If consensus cannot be reached, a majority vote will determine the outcome.
+ Decisions will be made by consensus whenever possible. If consensus cannot be reached, a majority vote will determine the outcome. (Zen Vote Method will be used)
 
 ### 3. Attendance
    
@@ -27,7 +27,7 @@ We pledge to act and interact in ways that contribute to an open, welcoming, div
 
 ### 6. Meeting Times and Locations/Mediums
    
- Meeting times will be decided through a poll to identify optimal times for all members. Locations or mediums will be selected based on accessibility and convenience for the entire group.
+ Meeting times will be during class times. Locations will be at the regular class location at Quinn Hall.
 
 ### 7. Agenda and Minutes/Notes
     
@@ -43,10 +43,10 @@ We pledge to act and interact in ways that contribute to an open, welcoming, div
 
 ### 10. Enforcement/Feedback
     
- Community leaders will enforce these rules fairly. Feedback can be given anonymously or openly, depending on individual preferences. We encourage constructive criticism and support to foster a positive environment.
+ Scrum Master, TA/Professor(s) will enforce these rules fairly. Feedback can be given anonymously or openly, depending on individual preferences. We encourage constructive criticism and support to foster a positive environment.
 
 ## Enforcement Responsibilities
- Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.
+ Scrum Master are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.
 
 ## Scope
  This Code of Conduct applies within all community spaces and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
