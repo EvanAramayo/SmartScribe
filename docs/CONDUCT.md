@@ -73,3 +73,7 @@ This Code of Conduct is adapted from the Contributor Covenant, version 2.1, avai
 Community Impact Guidelines were inspired by Mozilla's code of conduct enforcement ladder.
 
 For answers to common questions about this code of conduct, see the FAQ. Translations are available at Translations.
+
+
+
+![William Signature.]((https://drive.google.com/file/d/1s94XmnKYD5lFXSfS2Nos1kphlvx95uga/view?usp=sharing))
