@@ -81,3 +81,5 @@ For answers to common questions about this code of conduct, see the FAQ. Transla
 ![Jordan Signature.](https://drive.google.com/file/d/1ZJ0F0mxbTT_C35FC21aem7uBlM5PkK8C/view?usp=sharing)
 
 ![Judd Signature.](https://drive.google.com/file/d/1edryhQuDpdhAr6SDcOytOpYC9g92zhfQ/view?usp=sharing)
+
+![Evan Signature.](https://drive.google.com/file/d/1jeiukv1LOfMBBtOhXPD4zp9-NHSYuYVw/view?usp=sharing)
