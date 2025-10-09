@@ -74,6 +74,8 @@ Community Impact Guidelines were inspired by Mozilla's code of conduct enforceme
 
 For answers to common questions about this code of conduct, see the FAQ. Translations are available at Translations.
 
-
+## Signatures
 
 ![William Signature.]((https://drive.google.com/file/d/1s94XmnKYD5lFXSfS2Nos1kphlvx95uga/view?usp=sharing))
+
+![Jordan Signature.](https://drive.google.com/file/d/1ZJ0F0mxbTT_C35FC21aem7uBlM5PkK8C/view?usp=sharing)
