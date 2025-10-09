@@ -79,3 +79,5 @@ For answers to common questions about this code of conduct, see the FAQ. Transla
 ![William Signature.](https://drive.google.com/file/d/1B0rMEQ-1dABQLiw5Fj8D8USUzvGcRw-E/view?usp=sharing)
 
 ![Jordan Signature.](https://drive.google.com/file/d/1ZJ0F0mxbTT_C35FC21aem7uBlM5PkK8C/view?usp=sharing)
+
+![Judd Signature.](https://drive.google.com/file/d/1edryhQuDpdhAr6SDcOytOpYC9g92zhfQ/view?usp=sharing)
