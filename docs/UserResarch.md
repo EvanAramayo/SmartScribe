@@ -52,7 +52,7 @@ Team Action (if any):
 
 ## Observation 5:
 
-Observation Statement: Most people would want to use free tools for productivity and/or note taking
+Observation Statement: Most people would want to pay for a tool once for productivity and/or note taking but there are also people who would want to have a free plan
 
 Supporting Data: From our question, "Imagine a tool that does everything described. Which pricing model would you prefer?" About 50% of responses want the tool to have a one time purchase price. About 27% of responses would like a free plan with limited minutes or uses. About 9% of responses would like a monthly subscription. There are 13% of responses that would like a way to 'pay-as-you-go' based on transcription minuted/credits used. Based on the data, it seems as though most people either want to pay once or just have a free plan.
 <img width="866" height="397" alt="image" src="https://github.com/user-attachments/assets/90b232f6-538c-4c2d-818f-fea0fe99079e" />
