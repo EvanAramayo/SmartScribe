@@ -13,11 +13,14 @@ Team Action (if any):
 ## Observation 2:
 
 Observation Statement:
+Most users prioritize the ability to convert transcribed text into formatted notes that can be directly exported to Word or Google Docs for easy editing. While some expressed interest in integrations with apps like Notion or Obsidian, their main concern is ensuring the transcript can be quickly turned into editable, well-structured documents.
 
 Supporting Data:
+From the survey question “Which productivity tools do you currently use? (Select all that apply)”, 68.2% of respondents selected Microsoft Word or Google Docs. In the survey question *“Which of the following do you record for note-taking purposes? (Select all that apply)”*, **72.7%** of respondents selected *University Lectures/Classes*, indicating that the app will be heavily used for lecture note-taking in academic settings. Consequently, **Google Docs** and **Microsoft Word** emerge as the most relevant text editors for users to format and edit their transcribed notes.
+
 
 Team Action (if any):
-
+Implement a feature such as a dropdown button, enable one-click syncing, etc, that allows users to save or export their formatted transcript as a Word (.docx) or Google Docs file.
 
 
 ## Observation 3:
