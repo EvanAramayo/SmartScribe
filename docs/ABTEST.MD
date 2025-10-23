@@ -61,9 +61,8 @@ Allocation: 50% Control (no placeholder), 50% Variant (with placeholder).
 
 Setup using Firebase:
 
-Use Firebase Remote Config to toggle the placeholder on or off.
-
-Track the following events in Firebase Analytics:
+- Use Firebase Remote Config to toggle the placeholder on or off.
+- Track the following events in Firebase Analytics:
 
 editor_opened (with parameter: variant)
 
@@ -85,5 +84,5 @@ Font: italic, light grey
 
 Disappears once user starts typing
 
-
+------------------------------------------------------
 
