@@ -29,7 +29,7 @@
   - Use the `session_start` event that Firebase logs every time a user opens the app.
 
 ### PB5. CTR (Golden Path)
-**Suggestion:**  
-- On the recording screen, add a line of code to the button action to log the button click.  
-- The denominator is the number of times the opportunity to click the button was presented (can use Firebase automatic screen tracking).  
-- In Google Analytics dashboard, CTR formula:  
+- Collecting: Custom Firebase Analytics events for user actions in the golden path (start_upload, start_recording, transcription_generated, notes_viewed).
+- What’s collected: User/session IDs and event timestamps to calculate CTR = % of users moving from upload/record start → viewing structured notes.
+- Calculation: CTR = (Unique users triggering notes_viewed ÷ Unique users triggering start_upload OR start_recording) × 100
+
