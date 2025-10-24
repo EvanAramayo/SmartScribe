@@ -86,3 +86,51 @@ Disappears once user starts typing
 
 ------------------------------------------------------
 
+A/B Test Name: Loading Screen Feedback — Spinner vs Progress Skeleton
+
+User Story Number: US3 (Loading Experience in Upload Flow)
+
+Metrics (HEART Framework):
+Happiness: Post-loading micro-survey rating (1–5) on clarity of the process.
+Engagement: % of users who remain on the loading screen until transition; dwell time before abandoning.
+Adoption: % of new signups who proceed past the loading screen into the in-progress page.
+Retention: % of users who return the next day after having reached the loading screen.
+Task Success: CTR proxy = in_progress_screen_view / loading_screen_view
+
+Hypothesis:
+If we present a skeleton preview of note-like placeholders instead of a blank spinner, users will perceive progress as faster and clearer, leading to fewer drop-offs, higher task success, and greater engagement with the in-progress page.
+
+What problem are we trying to solve? Its impact?
+Currently, the loading step after file upload shows only a neutral spinner. This creates uncertainty and can feel like the app is stalled, especially since the actual transcription backend isn’t built yet. Users may abandon the flow at this point. The problem is significant because the loading step is a bottleneck in the funnel: if users leave here, they never reach the “in-progress” page or future transcription output. Improving perceived progress with skeleton previews is expected to reduce abandonment and increase conversion from upload → in-progress.
+
+Experiment Setup (Using Firebase):
+Platform: Firebase A/B Testing with Remote Config.
+Audience: 50% control, 50% variant, random assignment, sticky per user.
+Duration: 7 days minimum to smooth weekday/weekend behavior.
+
+Tracking (Firebase Analytics):
+loading_screen_view (fires on entering loading state)
+loading_complete (fires when timer ends and user proceeds)
+back_nav (user leaves before completion)
+in_progress_screen_view (user reaches next page)
+
+Optional: cancel_click if a cancel button is present.
+
+Metrics Tied to HEART:
+Adoption Rate = % who reach in_progress_screen_view
+Task Success proxy = in_progress_screen_view / loading_screen_view
+Drop-off rate = back_nav / loading_screen_view
+Happiness = survey rating collected on the in-progress page
+
+Variations:
+
+Control (A): Spinner
+Show neutral spinner and “Processing your file…” text.
+Fixed delay (e.g., 3.5 seconds) → navigates to in-progress page.
+
+Variant (B): Skeleton Preview
+Show skeleton layout with gray placeholder blocks (imitating note structure).
+Same fixed delay (3.5 seconds) → navigates to in-progress page.
+Copy: “Preparing your preview…”
+
+
