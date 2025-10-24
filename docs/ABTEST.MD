@@ -86,7 +86,7 @@ Disappears once user starts typing
 
 ------------------------------------------------------
 
-A/B Test Name: Loading Screen Feedback — Spinner vs Progress Skeleton
+A/B Test Name: Loading Screen Feedback (Spinner vs Progress Skeleton)
 
 User Story Number: US3 (Loading Experience in Upload Flow)
 
