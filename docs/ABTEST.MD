@@ -100,8 +100,12 @@ Task Success: CTR proxy = in_progress_screen_view / loading_screen_view
 Hypothesis:
 If we present a skeleton preview of note-like placeholders instead of a blank spinner, users will perceive progress as faster and clearer, leading to fewer drop-offs, higher task success, and greater engagement with the in-progress page.
 
-What problem are we trying to solve? Its impact?
-Currently, the loading step after file upload shows only a neutral spinner. This creates uncertainty and can feel like the app is stalled, especially since the actual transcription backend isn’t built yet. Users may abandon the flow at this point. The problem is significant because the loading step is a bottleneck in the funnel: if users leave here, they never reach the “in-progress” page or future transcription output. Improving perceived progress with skeleton previews is expected to reduce abandonment and increase conversion from upload → in-progress.
+Problem: Currently, the loading step after file upload shows only a neutral spinner. This creates uncertainty and can feel like the app is stalled, especially since the actual transcription backend isn’t built yet. Users may abandon the flow at this stage.
+
+This is a critical bottleneck in the funnel: if users leave here, they never reach the in-progress page or any future transcription output. Improving perceived progress with skeleton previews is expected to:
+ -Reduce abandonment on the loading screen.
+- Increase conversion from upload → in-progress.
+- Improve user trust and perception of app responsiveness.
 
 Experiment Setup (Using Firebase):
 Platform: Firebase A/B Testing with Remote Config.
