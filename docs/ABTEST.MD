@@ -38,8 +38,6 @@ User Property: `font_test_group` – identifies whether user belongs to Control 
 
 **User Story Number:** US4  
 
----
-
 ### Metrics (HEART Framework)
 
 - **Happiness:** User satisfaction after creating their first note, measured via an in-app 1–5 star rating or micro survey (“How easy was it to start writing your first note?”).  
@@ -48,21 +46,15 @@ User Property: `font_test_group` – identifies whether user belongs to Control 
 - **Retention:** Percentage of users who return and edit or create another note within 3 days of first session.  
 - **Task Success:** Average time between opening the note editor and the first keystroke (lower time indicates reduced hesitation).  
 
----
-
 ### Hypothesis
 
 If we display a short, friendly placeholder message like _“Start typing your thoughts…”_ in an empty note, users will begin writing faster and feel less intimidated by the blank screen.  
-
----
 
 ### Problem We’re Trying to Solve & Its Impact
 
 **Problem:** When users open the note editor for the first time, some hesitate or close the app without typing because the blank screen feels uninviting and directionless.  
 
 **Impact:** This leads to higher abandonment and lower engagement during a key moment — first note creation — which directly affects early user adoption and retention. Encouraging users to start typing faster may help establish a stronger habit of using the app regularly.  
-
----
 
 ### Experiment Setup (Using Firebase)
 
@@ -77,8 +69,6 @@ If we display a short, friendly placeholder message like _“Start typing your t
   The text disappears once the user begins typing.  
 
 **Duration:** 1 week, or until each group reaches at least 100 unique users.  
-
----
 
 ### Tracking in Firebase Analytics
 
