@@ -34,55 +34,86 @@ User Property: `font_test_group` – identifies whether user belongs to Control 
 
 -----------------------
 
-A/B Test Name: Add Placeholder Text in Empty Notes
+## A/B Test Name: Add Placeholder Text in Empty Notes  
 
-User Story Number: US4
+**User Story Number:** US4  
 
-Metrics (HEART):
+---
 
-Happiness: User satisfaction after first note creation (survey or rating)
+### Metrics (HEART Framework)
 
-Engagement: % of users who start typing after opening the editor
+- **Happiness:** User satisfaction after creating their first note, measured via an in-app 1–5 star rating or micro survey (“How easy was it to start writing your first note?”).  
+- **Engagement:** Percentage of users who start typing after opening the note editor.  
+- **Adoption:** Number of first-time users who successfully save a note during their initial session.  
+- **Retention:** Percentage of users who return and edit or create another note within 3 days of first session.  
+- **Task Success:** Average time between opening the note editor and the first keystroke (lower time indicates reduced hesitation).  
 
-Task Success: Average time between opening editor and first keystroke
+---
 
-Hypothesis:
-If we display a short, friendly placeholder message like “Start typing your thoughts…” in an empty note, users will begin writing faster and feel less intimidated by a blank screen.
+### Hypothesis
 
-What problem are we trying to solve? Its impact?
-Problem: When users open the note editor, some hesitate or exit without typing because the blank screen feels uninviting.
-Impact: This increases abandonment and decreases engagement during the first note creation — a key step in user adoption. Even a small improvement in the number of users who start typing can significantly increase early retention.
+If we display a short, friendly placeholder message like _“Start typing your thoughts…”_ in an empty note, users will begin writing faster and feel less intimidated by the blank screen.  
 
-Experiment:
+---
 
-Audience: All new users who open the note editor for the first time.
+### Problem We’re Trying to Solve & Its Impact
 
-Allocation: 50% Control (no placeholder), 50% Variant (with placeholder).
+**Problem:** When users open the note editor for the first time, some hesitate or close the app without typing because the blank screen feels uninviting and directionless.  
 
-Setup using Firebase:
+**Impact:** This leads to higher abandonment and lower engagement during a key moment — first note creation — which directly affects early user adoption and retention. Encouraging users to start typing faster may help establish a stronger habit of using the app regularly.  
 
-- Use Firebase Remote Config to toggle the placeholder on or off.
-- Track the following events in Firebase Analytics:
+---
 
-editor_opened (with parameter: variant)
+### Experiment Setup (Using Firebase)
 
-typing_started (timestamp difference from open)
+**Platform:** Firebase A/B Testing integrated with Firebase Remote Config and Firebase Analytics.  
 
-note_saved
+**Audience:** All new users who open the note editor for the first time.  
 
-Compare average time-to-first-keystroke and % of users who start typing.
+**Allocation:**  
+- 50% → **Control Group (Variant A):** Empty note editor with no text.  
+- 50% → **Test Group (Variant B):** Editor pre-filled with a grey italic placeholder message:  
+  > “Start typing your thoughts…”  
+  The text disappears once the user begins typing.  
 
-Variations:
+**Duration:** 1 week, or until each group reaches at least 100 unique users.  
 
-Variant A (Control): Empty text editor screen when creating a new note.
+---
 
-Variant B (Test): Text editor shows a grey placeholder line:
+### Tracking in Firebase Analytics
 
-“Start typing your thoughts…”
+- **Event:** `editor_opened`  
+  - **Description:** Logged when the note editor is opened.  
+  - **Parameter:** `variant: "control"` or `"test"`  
 
-Font: italic, light grey
+- **Event:** `typing_started`  
+  - **Description:** Logged on first keystroke.  
+  - **Usage:** Used to calculate time from open → first keystroke.  
 
-Disappears once user starts typing
+- **Event:** `note_saved`  
+  - **Description:** Logged when the user saves their first note.  
+  - **Usage:** Used to measure adoption.  
+
+- **Event:** `user_feedback_submitted`  
+  - **Description:** Logged when user completes the satisfaction survey.  
+  - **Parameter:** `rating: 1–5`  
+
+**User Property:**  
+- `placeholder_test_group` → identifies whether the user belongs to Control (A) or Variant (B).  
+
+### Analysis Plan
+
+- Compare average **time-to-first-keystroke** between Control and Variant.  
+- Measure **% of users who start typing** after opening the editor.  
+- Analyze **note save rates** and **3-day retention**.  
+- Review **user satisfaction ratings** to determine whether the placeholder improves perceived usability.  
+
+### Success Criteria
+
+The experiment will be considered a success if:  
+- The average time-to-first-keystroke decreases by at least **10%**, and  
+- The percentage of users who start typing increases by **≥5%** in the variant group, without reducing satisfaction scores.  
+
 
 ------------------------------------------------------
 
