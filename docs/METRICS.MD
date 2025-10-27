@@ -41,3 +41,4 @@ So that I can assess the effectiveness of these features and make informed decis
 - What’s collected: User/session IDs and event timestamps to calculate CTR = % of users moving from upload/record start → viewing structured notes.
 - Calculation: CTR = (Unique users triggering notes_viewed ÷ Unique users triggering start_upload OR start_recording) × 100
 
+### PB6. Average 
