@@ -137,4 +137,35 @@ Show skeleton layout with gray placeholder blocks (imitating note structure).
 Same fixed delay (3.5 seconds) → navigates to in-progress page.
 Copy: “Preparing your preview…”
 
+------------------------------------------------------
+A/B Test Name: Separate Screens for Signup and Login
+User Story Number: 1 & 2
+Metrics (HEART Framework):
+Happiness: User satisfaction based on post-interaction surveys (ease of use and clarity).
+Engagement: Time spent on the signup/login screen, conversion rate, and the number of users who complete the signup/login process.
+Adoption: Percentage of new users who successfully sign up or log in on their first attempt.
+Retention: Returning user rate within 7 days after first signup/login.
+Task Success: Completion rate of successful signups and logins.
+
+Hypothesis:
+I believe providing separate screens for signup and login, users will be able to find the process clearer and less confusing, leading to higher completion rates for both actions and improved overall user satisfaction.
+
+Problem We’re Trying to Solve:
+We aim to address the potential confusion users may experience when both signup and login options are presented on a single screen. By separating these functions, we hope to enhance user experience and streamline the onboarding process, ultimately increasing user retention and encouraging new users to choose our application over competitors.
+
+Experiment Setup (Using Firebase):
+Platform: Firebase A/B Testing integrated with Remote Config.
+Audience: 50% of total active users segmented randomly into two groups (Control and Variant).
+Variations:
+Variation (A): Combined screen for signup and login with tabs.
+Variation (B): Separate screens for signup and login.
+Duration:
+Around a week, to allow for sufficient data collection.
+
+Tracking in Firebase:
+Event: page_view – track total views of the signup/login screens.
+Event: signup_success – measure successful completions of the signup process.
+Event: login_success – measure successful logins.
+Event: cta_click – track engagement with the signup and login buttons.
+User Property: auth_test_group – identifies whether the user belongs to variation A or B.
 
