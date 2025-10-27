@@ -10,8 +10,14 @@
 - Data is stored in a Firestore document.
 
 ### PB2. Daily Active Users (DAU)
-- This metric is automatically logged by Firebase Analytics.  
+- **Collection Method**: 
+- This metric is automatically collected through Firebase Analytics, which is integrated into our FlutterFlow app.
+- Firebase logs the app_open and user_engagement events whenever a user launches the app or interacts with it for a session.
+- We can view DAU data in the Firebase Analytics dashboard by filtering users by date and engagement activity. 
 - DAU is derived from the count of unique User IDs that log the automatic `session_start` event each day.
+- to get the backend source we will go to Firebase Analytics → user_engagement, app_open
+- no extra code is needed
+Metric visible in Analytics → Active Users → Daily
 
 ### PB3. Adoption Rate
 - **Collection Method:**  
