@@ -41,9 +41,8 @@ So that I can assess the effectiveness of these features and make informed decis
 - What’s collected: User/session IDs and event timestamps to calculate CTR = % of users moving from upload/record start → viewing structured notes.
 - Calculation: CTR = (Unique users triggering notes_viewed ÷ Unique users triggering start_upload OR start_recording) × 100
 
-### PB6. Average 
 
-## PB6. Average Number of Audio Notes Transcribed per Active User per Day
+### PB6. Average Number of Audio Notes Transcribed per Active User per Day
 
 **User Story:**  
 As a product owner, I want to measure how many audio notes are transcribed on average per active user per day, so that I can assess whether users are engaging deeply with the app’s core functionality and identify trends in note-taking behavior.
