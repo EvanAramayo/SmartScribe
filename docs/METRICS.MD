@@ -30,8 +30,11 @@ So that I can assess the effectiveness of these features and make informed decis
 
 ### PB4. Retention Rate
 - **Collection Method:**  
-  - Check if the user returns to the app using auto-tracking.  
+  - Data Source: Firebase Authentication + Firestore
+  - Track each user's login timestamp using Firebase Authentication’s onAuthStateChanged listener.
+  - On each login, write a timestamp to collection keyed by user UID
   - Use the `session_start` event that Firebase logs every time a user opens the app.
+  - For each cohort of users who signed up on a given day, check how many returned in the defined window.
 
 ### PB5. CTR (Golden Path)
 - Collecting: Custom Firebase Analytics events for user actions in the golden path (start_upload, start_recording, transcription_generated, notes_viewed).
