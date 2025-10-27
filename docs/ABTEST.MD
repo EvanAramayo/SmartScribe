@@ -201,3 +201,42 @@ Event: login_success – measure successful logins.
 Event: cta_click – track engagement with the signup and login buttons.
 User Property: auth_test_group – identifies whether the user belongs to variation A or B.
 
+------------------------------------------------------
+A/B Test Name:Logo Impact on Brand Trust and Engagement
+
+User Story Number
+All User Stories
+
+Metrics (HEART Framework)
+Happiness: User-reported trust and brand perception via post-session surveys
+Engagement: Time spent on homepage, scroll depth
+Adoption: Click-through rate on primary CTA (e.g., “Get Started”)
+Retention: Return visits within 7 days
+Task Success: Completion of signup flow from homepage
+
+Hypothesis
+Changing the logo to a more modern, visually distinctive design will increase user trust and engagement, leading to higher click-through rates and improved conversion from homepage to signup.
+
+What Problem Are We Trying to Solve?
+Our current homepage has a high bounce rate (~62%) and low CTA click-through (~8%). Heatmaps show users often pause near the top of the page but don’t proceed further. We suspect the current logo lacks visual impact and brand clarity, failing to establish trust or recognition. This bottleneck may be causing users to disengage before exploring our value proposition.
+
+By testing a logo redesign, we aim to determine whether a stronger brand identity can improve first impressions and encourage deeper interaction with the homepage.
+
+Experiment
+We will use Firebase Remote Config to serve two logo variants:
+Control Group (50%): Sees the current logo
+Test Group (50%): Sees the redesigned logo
+
+Firebase Analytics will track:
+homepage_view_time
+cta_click
+scroll_depth
+signup_completion
+logo_variant (custom parameter to tag which logo was shown)
+
+We’ll run the experiment for 2 weeks to ensure statistical significance, and all users will be eligible.
+
+Variations
+Variant A (Control): Current logo — flat, monochrome, minimalistic
+Variant B (Test): Redesigned logo — bold typography, color gradient, subtle animation on hover
+
