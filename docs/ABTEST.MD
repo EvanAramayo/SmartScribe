@@ -140,6 +140,7 @@ Copy: “Preparing your preview…”
 ------------------------------------------------------
 A/B Test Name: Separate Screens for Signup and Login
 User Story Number: 1 & 2
+
 Metrics (HEART Framework):
 
 Happiness: User satisfaction based on post-interaction surveys (ease of use and clarity).
@@ -161,14 +162,18 @@ We aim to address the potential confusion users may experience when both signup 
 Experiment Setup (Using Firebase):
 
 Platform: Firebase A/B Testing integrated with Remote Config.
+
 Audience: 50% of total active users segmented randomly into two groups (Control and Variant).
+
 Variations:
 Variation (A): Combined screen for signup and login with tabs.
 Variation (B): Separate screens for signup and login.
+
 Duration:
 Around a week, to allow for sufficient data collection.
 
 Tracking in Firebase:
+
 Event: page_view – track total views of the signup/login screens.
 Event: signup_success – measure successful completions of the signup process.
 Event: login_success – measure successful logins.
