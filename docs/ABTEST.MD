@@ -202,7 +202,7 @@ Event: cta_click – track engagement with the signup and login buttons.
 User Property: auth_test_group – identifies whether the user belongs to variation A or B.
 
 ------------------------------------------------------
-A/B Test Name:Logo Impact on Brand Trust and Engagement
+A/B Test Name: Logo 
 
 User Story Number
 All User Stories
