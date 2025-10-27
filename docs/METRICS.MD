@@ -10,19 +10,16 @@
 - Data is stored in a Firestore document.
 
 ### PB2. Daily Active Users (DAU)
-**Suggestion:**  
 - This metric is automatically logged by Firebase Analytics.  
 - DAU is derived from the count of unique User IDs that log the automatic `session_start` event each day.
 
 ### PB3. Adoption Rate
-**Suggestion:**  
 - **Collection Method:**  
   - Denominator (New Signups) is logged automatically by FlutterFlow/Firebase Auth (`sign_up` event).  
   - Numerator (First Recording Processed) requires a Custom Event (`first_note_processed`).  
   - This can be triggered by pressing “choose audio file” or “press record,” which can be a dummy counter for testing.
 
 ### PB4. Retention Rate
-**Suggestion:**  
 - **Collection Method:**  
   - Check if the user returns to the app using auto-tracking.  
   - Use the `session_start` event that Firebase logs every time a user opens the app.
