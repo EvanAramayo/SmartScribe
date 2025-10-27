@@ -42,3 +42,26 @@ So that I can assess the effectiveness of these features and make informed decis
 - Calculation: CTR = (Unique users triggering notes_viewed ÷ Unique users triggering start_upload OR start_recording) × 100
 
 ### PB6. Average 
+
+## PB6. Average Number of Audio Notes Transcribed per Active User per Day
+
+**User Story:**  
+As a product owner, I want to measure how many audio notes are transcribed on average per active user per day, so that I can assess whether users are engaging deeply with the app’s core functionality and identify trends in note-taking behavior.
+
+**Collection Method:**  
+- **Custom Event:** Log an event (`note_transcribed`) every time an audio file is successfully processed into text.  
+- **Active Users:** Use Firebase’s built-in `session_start` or `user_engagement` events to determine the pool of daily active users.  
+- **Calculation:**  
+   - For each day, count the total number of `note_transcribed` events.  
+   - Count the number of unique active users for that day.  
+   - Divide total `note_transcribed` events by unique active users.  
+
+**Data Source:**  
+- Firebase Analytics → Custom Event (`note_transcribed`)  
+- Firebase Analytics → Active Users (`session_start`, `user_engagement`)  
+
+**Reporting Frequency:**  
+- Daily aggregation with rolling 30-day view for trend analysis in Firebase dashboard or via BigQuery export.  
+
+
+
