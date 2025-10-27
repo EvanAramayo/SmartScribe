@@ -5,9 +5,8 @@
 ## **Note**: The writing below is placeholder. Each member will need to write what they did for each PB cart.
 
 ### PB1. Net Promoter Score (NPS)
-**Suggestion:**  
 - **Collection Method:** A custom in-app survey screen/pop-up is displayed immediately after a user's first login.  
-- A 0–10 rating is recorded as a custom Event with the score as a custom parameter.  
+- A 0–5 rating is recorded as a custom Event with the score as a custom parameter.  
 - Data is stored in a Firestore document.
 
 ### PB2. Daily Active Users (DAU)
