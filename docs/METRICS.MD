@@ -20,6 +20,9 @@
 Metric visible in Analytics → Active Users → Daily
 
 ### PB3. Adoption Rate
+As a product owner,
+I want to collect metrics on user engagement and functionality for the signup/sign in process and the Golden Path,
+So that I can assess the effectiveness of these features and make informed decisions for future iterations.
 - **Collection Method:**  
   - Denominator (New Signups) is logged automatically by FlutterFlow/Firebase Auth (`sign_up` event).  
   - Numerator (First Recording Processed) requires a Custom Event (`first_note_processed`).  
