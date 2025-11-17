@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "598454420647",
+    "project_id": "smartscribe-c1758",
+    "storage_bucket": "smartscribe-c1758.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598454420647:android:e6a4f3f2152679e1580782",
+        "android_client_info": {
+          "package_name": "com.mycompany.smartscribe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598454420647-hquv7oo6qd93ju94isu7fovt6ajhp74q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.smartscribe",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "598454420647-8ag51pl6abgb7rkfv30p5bt4df4a2th7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSLzmMm2wgRMGs9CFQpiXtUtdN3LraD_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598454420647-8ag51pl6abgb7rkfv30p5bt4df4a2th7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "598454420647-0ke9vn691ll724tod7ninj59l3esvvec.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.uricsc305.SmartScribe"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598454420647:android:45916254bb6c1c90580782",
+        "android_client_info": {
+          "package_name": "com.uricsc305.SmartScribe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598454420647-0e44hrv0roo9jvit4jg94hj7cc0anag5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uricsc305.SmartScribe",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "598454420647-8ag51pl6abgb7rkfv30p5bt4df4a2th7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSLzmMm2wgRMGs9CFQpiXtUtdN3LraD_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598454420647-8ag51pl6abgb7rkfv30p5bt4df4a2th7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "598454420647-0ke9vn691ll724tod7ninj59l3esvvec.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.uricsc305.SmartScribe"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
