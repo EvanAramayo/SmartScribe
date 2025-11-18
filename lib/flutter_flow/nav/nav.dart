@@ -72,7 +72,7 @@ class AppStateNotifier extends ChangeNotifier {
   }
 }
 
-GoRouter createRouter(AppStateNotifier appStateNotifier) {
+GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) {
   $confetti_modualo_library_b75kfy.initializeRoutes(
     homePageWidgetName: 'confetti_modualo_library_b75kfy.HomePage',
     homePageWidgetPath: '/homePage',
@@ -83,14 +83,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) {
     debugLogDiagnostics: true,
     refreshListenable: appStateNotifier,
     navigatorKey: appNavigatorKey,
-    errorBuilder: (context, state) =>
-        appStateNotifier.loggedIn ? InsertAudioPageWidget() : SignUpWidget(),
+    errorBuilder: (context, state) => appStateNotifier.loggedIn
+        ? entryPage ?? InsertAudioPageWidget()
+        : SignUpWidget(),
     routes: [
       FFRoute(
         name: '_initialize',
         path: '/',
         builder: (context, _) => appStateNotifier.loggedIn
-            ? InsertAudioPageWidget()
+            ? entryPage ?? InsertAudioPageWidget()
             : SignUpWidget(),
       ),
       FFRoute(
