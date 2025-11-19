@@ -7,6 +7,7 @@ import 'schema/util/firestore_util.dart';
 
 import 'schema/users_record.dart';
 import 'schema/audio_notes_record.dart';
+import 'schema/audio_collection3_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -17,6 +18,7 @@ export 'schema/util/schema_util.dart';
 
 export 'schema/users_record.dart';
 export 'schema/audio_notes_record.dart';
+export 'schema/audio_collection3_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -90,6 +92,43 @@ Future<List<AudioNotesRecord>> queryAudioNotesRecordOnce({
     queryCollectionOnce(
       AudioNotesRecord.collection(parent),
       AudioNotesRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query AudioCollection3Records (as a Stream and as a Future).
+Future<int> queryAudioCollection3RecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      AudioCollection3Record.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<AudioCollection3Record>> queryAudioCollection3Record({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      AudioCollection3Record.collection,
+      AudioCollection3Record.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<AudioCollection3Record>> queryAudioCollection3RecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      AudioCollection3Record.collection,
+      AudioCollection3Record.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

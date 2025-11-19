@@ -60,6 +60,36 @@ class UsersRecord extends FirestoreRecord {
   int get timesloggedin => _timesloggedin ?? 0;
   bool hasTimesloggedin() => _timesloggedin != null;
 
+  // "status" field.
+  String? _status;
+  String get status => _status ?? '';
+  bool hasStatus() => _status != null;
+
+  // "storagePath" field.
+  String? _storagePath;
+  String get storagePath => _storagePath ?? '';
+  bool hasStoragePath() => _storagePath != null;
+
+  // "transcription" field.
+  String? _transcription;
+  String get transcription => _transcription ?? '';
+  bool hasTranscription() => _transcription != null;
+
+  // "summary" field.
+  String? _summary;
+  String get summary => _summary ?? '';
+  bool hasSummary() => _summary != null;
+
+  // "end_time" field.
+  DateTime? _endTime;
+  DateTime? get endTime => _endTime;
+  bool hasEndTime() => _endTime != null;
+
+  // "audio" field.
+  String? _audio;
+  String get audio => _audio ?? '';
+  bool hasAudio() => _audio != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _photoUrl = snapshotData['photo_url'] as String?;
@@ -70,6 +100,12 @@ class UsersRecord extends FirestoreRecord {
     _displayName = snapshotData['display_name'] as String?;
     _npsRating = castToType<int>(snapshotData['NpsRating']);
     _timesloggedin = castToType<int>(snapshotData['timesloggedin']);
+    _status = snapshotData['status'] as String?;
+    _storagePath = snapshotData['storagePath'] as String?;
+    _transcription = snapshotData['transcription'] as String?;
+    _summary = snapshotData['summary'] as String?;
+    _endTime = snapshotData['end_time'] as DateTime?;
+    _audio = snapshotData['audio'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -115,6 +151,12 @@ Map<String, dynamic> createUsersRecordData({
   String? displayName,
   int? npsRating,
   int? timesloggedin,
+  String? status,
+  String? storagePath,
+  String? transcription,
+  String? summary,
+  DateTime? endTime,
+  String? audio,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -127,6 +169,12 @@ Map<String, dynamic> createUsersRecordData({
       'display_name': displayName,
       'NpsRating': npsRating,
       'timesloggedin': timesloggedin,
+      'status': status,
+      'storagePath': storagePath,
+      'transcription': transcription,
+      'summary': summary,
+      'end_time': endTime,
+      'audio': audio,
     }.withoutNulls,
   );
 
@@ -146,7 +194,13 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.graduationDate == e2?.graduationDate &&
         e1?.displayName == e2?.displayName &&
         e1?.npsRating == e2?.npsRating &&
-        e1?.timesloggedin == e2?.timesloggedin;
+        e1?.timesloggedin == e2?.timesloggedin &&
+        e1?.status == e2?.status &&
+        e1?.storagePath == e2?.storagePath &&
+        e1?.transcription == e2?.transcription &&
+        e1?.summary == e2?.summary &&
+        e1?.endTime == e2?.endTime &&
+        e1?.audio == e2?.audio;
   }
 
   @override
@@ -159,7 +213,13 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.graduationDate,
         e?.displayName,
         e?.npsRating,
-        e?.timesloggedin
+        e?.timesloggedin,
+        e?.status,
+        e?.storagePath,
+        e?.transcription,
+        e?.summary,
+        e?.endTime,
+        e?.audio
       ]);
 
   @override

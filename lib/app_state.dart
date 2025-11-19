@@ -25,4 +25,10 @@ class FFAppState extends ChangeNotifier {
   set darkMode(bool value) {
     _darkMode = value;
   }
+
+  String _groqKey = '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';
+  String get groqKey => _groqKey;
+  set groqKey(String value) {
+    _groqKey = value;
+  }
 }

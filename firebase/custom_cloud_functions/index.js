@@ -1,5 +1,7 @@
 const admin = require("firebase-admin/app");
 admin.initializeApp();
 
-const processAudioFile2 = require("./process_audio_file2.js");
-exports.processAudioFile2 = processAudioFile2.processAudioFile2;
+const groqTranscribeV2 = require("./groq_transcribe_v2.js");
+exports.groqTranscribeV2 = groqTranscribeV2.groqTranscribeV2;
+const groqTranscribeV3 = require("./groq_transcribe_v3.js");
+exports.groqTranscribeV3 = groqTranscribeV3.groqTranscribeV3;

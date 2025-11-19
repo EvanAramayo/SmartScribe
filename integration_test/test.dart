@@ -67,6 +67,30 @@ void main() async {
     await tester.pumpAndSettle(const Duration(milliseconds: 3000));
     expect(find.text('Please Enter your name...'), findsWidgets);
   });
+
+  testWidgets('UserAccountCreationTest', (WidgetTester tester) async {
+    _overrideOnError();
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: 'jordan.melnick@uri.edu', password: 'happy123');
+    await tester.pumpWidget(MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => FFAppState(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) =>
+              confetti_modualo_library_b75kfy_app_state.FFAppState(),
+        ),
+      ],
+      child: const MyApp(),
+    ));
+    await GoogleFonts.pendingFonts();
+
+    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
+    await tester.tap(find.byKey(const ValueKey('Button_klkk')));
+    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
+    expect(find.text('Choose Audio File'), findsOneWidget);
+  });
 }
 
 // There are certain types of errors that can happen during tests but

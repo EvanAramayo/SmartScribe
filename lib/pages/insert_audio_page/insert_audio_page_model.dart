@@ -12,12 +12,20 @@ class InsertAudioPageModel extends FlutterFlowModel<InsertAudioPageWidget> {
 
   String? docID;
 
+  DateTime? pageRecord;
+
+  bool hasEntry = false;
+
+  DocumentReference? currentEntryRef;
+
+  bool isRecording = true;
+
   ///  State fields for stateful widgets in this page.
 
-  bool isDataUploading_uploadData973 = false;
-  FFUploadedFile uploadedLocalFile_uploadData973 =
+  bool isDataUploading_uploadDataMxh = false;
+  FFUploadedFile uploadedLocalFile_uploadDataMxh =
       FFUploadedFile(bytes: Uint8List.fromList([]), originalFilename: '');
-  String uploadedFileUrl_uploadData973 = '';
+  String uploadedFileUrl_uploadDataMxh = '';
 
   // State field(s) for Checkbox widget.
   bool? checkboxValue;

@@ -91,7 +91,7 @@ class _TestDetailPageWidgetState extends State<TestDetailPageWidget> {
               backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
               title: Text(
-                'Page Title',
+                'Transcription',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.interTight(
                         fontWeight: FlutterFlowTheme.of(context)

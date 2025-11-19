@@ -1,14 +1,22 @@
-class ProcessAudioFile2CloudFunctionCallResponse {
-  ProcessAudioFile2CloudFunctionCallResponse({
+
+class GroqTranscribeV2CloudFunctionCallResponse {
+  GroqTranscribeV2CloudFunctionCallResponse({
     this.errorCode,
     this.succeeded,
     this.jsonBody,
-    this.resultAsString,
-    this.data,
   });
   String? errorCode;
   bool? succeeded;
   dynamic jsonBody;
-  String? resultAsString;
-  bool? data;
+}
+
+class GroqTranscribeV3CloudFunctionCallResponse {
+  GroqTranscribeV3CloudFunctionCallResponse({
+    this.errorCode,
+    this.succeeded,
+    this.jsonBody,
+  });
+  String? errorCode;
+  bool? succeeded;
+  dynamic jsonBody;
 }
