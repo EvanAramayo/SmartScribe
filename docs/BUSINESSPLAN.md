@@ -115,3 +115,11 @@ Alternative UVPs:
 
 ## 13. Conclusion
 This app addresses a real pain point for anyone relying on recorded content. By combining accurate transcription, smart summarization, and structured note formatting, we save users time, reduce frustration, and make information actionable. The combination of subscriptions, pay-per-use, and enterprise solutions ensures scalable revenue while building a loyal user base.
+
+
+
+
+---
+## Semi-Final Lean Canvas Business Model
+
+https://docs.google.com/presentation/d/1K2vfpKsBHeTe8pVpwOEK4JSVQmogerSmhN5TBXhg8KM/edit?usp=sharing
