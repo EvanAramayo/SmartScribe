@@ -309,7 +309,7 @@ class _ProfilecreationWidgetState extends State<ProfilecreationWidget> {
                       ));
                       logFirebaseEvent('Grad_date_navigate_to');
 
-                      context.pushNamed(InsertAudioPageWidget.routeName);
+                      context.pushNamed(InsertAudioWidget.routeName);
                     },
                     autofocus: false,
                     obscureText: false,
@@ -401,7 +401,7 @@ class _ProfilecreationWidgetState extends State<ProfilecreationWidget> {
                     logFirebaseEvent('PROFILECREATION_Signup-Button_ON_TAP');
                     logFirebaseEvent('Signup-Button_navigate_to');
 
-                    context.pushNamed(InsertAudioPageWidget.routeName);
+                    context.pushNamed(InsertAudioWidget.routeName);
                   },
                   text: 'Finish Setting up...',
                   options: FFButtonOptions(

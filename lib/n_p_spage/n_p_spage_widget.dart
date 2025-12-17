@@ -450,8 +450,8 @@ class _NPSpageWidgetState extends State<NPSpageWidget> {
                                     ));
                                     logFirebaseEvent('RatingBar_navigate_to');
 
-                                    context.pushNamed(
-                                        InsertAudioPageWidget.routeName);
+                                    context
+                                        .pushNamed(InsertAudioWidget.routeName);
                                   },
                                   itemBuilder: (context, index) => Icon(
                                     Icons.star_rounded,

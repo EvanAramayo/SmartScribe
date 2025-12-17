@@ -86,14 +86,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) {
     refreshListenable: appStateNotifier,
     navigatorKey: appNavigatorKey,
     errorBuilder: (context, state) => appStateNotifier.loggedIn
-        ? entryPage ?? InsertAudioPageWidget()
+        ? entryPage ?? InsertAudioWidget()
         : SignUpWidget(),
     routes: [
       FFRoute(
         name: '_initialize',
         path: '/',
         builder: (context, _) => appStateNotifier.loggedIn
-            ? entryPage ?? InsertAudioPageWidget()
+            ? entryPage ?? InsertAudioWidget()
             : SignUpWidget(),
       ),
       FFRoute(
@@ -112,22 +112,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) {
         builder: (context, params) => NPSpageWidget(),
       ),
       FFRoute(
-        name: InsertAudioPageWidget.routeName,
-        path: InsertAudioPageWidget.routePath,
-        builder: (context, params) => InsertAudioPageWidget(
-          audioDocId: params.getParam(
-            'audioDocId',
+        name: TranscriptionPageWidget.routeName,
+        path: TranscriptionPageWidget.routePath,
+        builder: (context, params) => TranscriptionPageWidget(
+          transcriptRef: params.getParam(
+            'transcriptRef',
+            ParamType.DocumentReference,
+            isList: false,
+            collectionNamePath: ['transcript'],
+          ),
+        ),
+      ),
+      FFRoute(
+        name: InsertAudioWidget.routeName,
+        path: InsertAudioWidget.routePath,
+        builder: (context, params) => InsertAudioWidget(),
+      ),
+      FFRoute(
+        name: TranscriptsHistoryPageWidget.routeName,
+        path: TranscriptsHistoryPageWidget.routePath,
+        builder: (context, params) => TranscriptsHistoryPageWidget(),
+      ),
+      FFRoute(
+        name: AINotesPageTranscribedWidget.routeName,
+        path: AINotesPageTranscribedWidget.routePath,
+        builder: (context, params) => AINotesPageTranscribedWidget(
+          transcribedAudio: params.getParam(
+            'transcribedAudio',
             ParamType.String,
           ),
         ),
       ),
       FFRoute(
-        name: TestDetailPageWidget.routeName,
-        path: TestDetailPageWidget.routePath,
-        builder: (context, params) => TestDetailPageWidget(
-          audioDocId: params.getParam(
-            'audioDocId',
-            ParamType.String,
+        name: ScribeAIWidget.routeName,
+        path: ScribeAIWidget.routePath,
+        builder: (context, params) => ScribeAIWidget(
+          transcriptRef: params.getParam(
+            'transcriptRef',
+            ParamType.DocumentReference,
+            isList: false,
+            collectionNamePath: ['transcript'],
           ),
         ),
       ),

@@ -1,13 +1,17 @@
 
-class GroqTranscribeV2CloudFunctionCallResponse {
-  GroqTranscribeV2CloudFunctionCallResponse({
+class AudioTranscribeUrlCloudFunctionCallResponse {
+  AudioTranscribeUrlCloudFunctionCallResponse({
     this.errorCode,
     this.succeeded,
     this.jsonBody,
+    this.resultAsString,
+    this.data,
   });
   String? errorCode;
   bool? succeeded;
   dynamic jsonBody;
+  String? resultAsString;
+  dynamic data;
 }
 
 class GroqTranscribeV3CloudFunctionCallResponse {
@@ -15,8 +19,12 @@ class GroqTranscribeV3CloudFunctionCallResponse {
     this.errorCode,
     this.succeeded,
     this.jsonBody,
+    this.resultAsString,
+    this.data,
   });
   String? errorCode;
   bool? succeeded;
   dynamic jsonBody;
+  String? resultAsString;
+  dynamic data;
 }

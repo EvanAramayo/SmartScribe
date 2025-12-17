@@ -31,4 +31,18 @@ class FFAppState extends ChangeNotifier {
   set groqKey(String value) {
     _groqKey = value;
   }
+
+  String _convertedTranscript = '';
+  String get convertedTranscript => _convertedTranscript;
+  set convertedTranscript(String value) {
+    _convertedTranscript = value;
+  }
+
+  /// Used to keep track of input audio file to keep track of multiple
+  /// recordings
+  DateTime? _trancriptTimeCreated;
+  DateTime? get trancriptTimeCreated => _trancriptTimeCreated;
+  set trancriptTimeCreated(DateTime? value) {
+    _trancriptTimeCreated = value;
+  }
 }

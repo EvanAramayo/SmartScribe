@@ -1398,8 +1398,7 @@ class _SignUpWidgetState extends State<SignUpWidget>
                                                   'loginGoogle_navigate_to');
 
                                               context.pushNamedAuth(
-                                                  InsertAudioPageWidget
-                                                      .routeName,
+                                                  InsertAudioWidget.routeName,
                                                   context.mounted);
                                             },
                                             text: 'Continue with Google',

@@ -70,6 +70,11 @@ class AudioCollection3Record extends FirestoreRecord {
   DateTime? get startAt => _startAt;
   bool hasStartAt() => _startAt != null;
 
+  // "audioDonwloadURL" field.
+  String? _audioDonwloadURL;
+  String get audioDonwloadURL => _audioDonwloadURL ?? '';
+  bool hasAudioDonwloadURL() => _audioDonwloadURL != null;
+
   void _initializeFields() {
     _userID = snapshotData['userID'] as String?;
     _status = snapshotData['status'] as String?;
@@ -82,6 +87,7 @@ class AudioCollection3Record extends FirestoreRecord {
     _audio = snapshotData['audio'] as String?;
     _endTime = snapshotData['end_time'] as DateTime?;
     _startAt = snapshotData['start_At'] as DateTime?;
+    _audioDonwloadURL = snapshotData['audioDonwloadURL'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -129,6 +135,7 @@ Map<String, dynamic> createAudioCollection3RecordData({
   String? audio,
   DateTime? endTime,
   DateTime? startAt,
+  String? audioDonwloadURL,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -141,6 +148,7 @@ Map<String, dynamic> createAudioCollection3RecordData({
       'audio': audio,
       'end_time': endTime,
       'start_At': startAt,
+      'audioDonwloadURL': audioDonwloadURL,
     }.withoutNulls,
   );
 
@@ -164,7 +172,8 @@ class AudioCollection3RecordDocumentEquality
         e1?.createdAt == e2?.createdAt &&
         e1?.audio == e2?.audio &&
         e1?.endTime == e2?.endTime &&
-        e1?.startAt == e2?.startAt;
+        e1?.startAt == e2?.startAt &&
+        e1?.audioDonwloadURL == e2?.audioDonwloadURL;
   }
 
   @override
@@ -179,7 +188,8 @@ class AudioCollection3RecordDocumentEquality
         e?.createdAt,
         e?.audio,
         e?.endTime,
-        e?.startAt
+        e?.startAt,
+        e?.audioDonwloadURL
       ]);
 
   @override

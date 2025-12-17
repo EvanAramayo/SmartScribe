@@ -68,7 +68,7 @@ void main() async {
     expect(find.text('Please Enter your name...'), findsWidgets);
   });
 
-  testWidgets('UserAccountCreationTest', (WidgetTester tester) async {
+  testWidgets('verifyAudioFilesOnly', (WidgetTester tester) async {
     _overrideOnError();
     await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: 'jordan.melnick@uri.edu', password: 'happy123');
@@ -87,9 +87,9 @@ void main() async {
     await GoogleFonts.pendingFonts();
 
     await tester.pumpAndSettle(const Duration(milliseconds: 3000));
-    await tester.tap(find.byKey(const ValueKey('Button_klkk')));
+    await tester.tap(find.byKey(const ValueKey('IconButton_8ews')));
     await tester.pumpAndSettle(const Duration(milliseconds: 3000));
-    expect(find.text('Choose Audio File'), findsOneWidget);
+    expect(find.byKey(const ValueKey('IconButton_8ews')), findsOneWidget);
   });
 }
 
