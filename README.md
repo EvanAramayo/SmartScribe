@@ -1,32 +1,35 @@
 # SmartScribe
 
-A new Flutter project.
+SmartScribe is an application designed to convert audio recordings from meetings, lectures, and study sessions into clear, structured notes. The app provides accurate transcriptions and insightful summaries, helping users elevate productivity and streamline information management.
 
-## Getting Started
+## Features
 
-FlutterFlow projects are built to run on the Flutter _stable_ release.
+- **Audio-to-Text Transcription**: Automatically convert spoken words into text with high accuracy.
+- **Structured Notes**: Organize transcriptions into clear, easily navigable notes.
+- **Summarization**: Generate concise summaries to capture key points from recordings.
+- **Multi-Format Support**: Work with various audio formats without hassle.
+- **User-Friendly Interface**: Intuitive design for seamless user experience.
 
-## Integration Tests
+## Installation
 
-To test on a real iOS / Android device, first connect the device and run the following command from the root of the project:
+To get started with SmartScribe, follow these steps:
 
-```bash
-flutter test integration_test/test.dart
+Clone the repository:
+   
+   ```bash
+   git clone https://github.com/EvanAramayo/SmartScribe.git
 ```
+## Usage
+- Upload your audio recordings.
 
-To test on a web browser, first launch `chromedriver` as follows:
-```bash
-chromedriver --port=4444
-```
+- Choose the desired language for transcription and summarization options.
 
-Then from the root of the project, run the following command:
-```bash
-flutter drive \
-  --driver=test_driver/integration_test.dart \
-  --target=integration_test/test.dart \
-  -d chrome
-```
+- Review and edit the transcribed text as needed.
 
-Find more information about running Flutter integration tests [here](https://docs.flutter.dev/cookbook/testing/integration/introduction#5-run-the-integration-test).
+- Download or save the notes for future reference.
 
-Refer to this guide for instructions on running the tests on [Firebase Test Lab](https://github.com/flutter/flutter/tree/main/packages/integration_test#firebase-test-lab).
+Contributing
+We welcome contributions! Please fork the repository and submit a pull request with your changes. Make sure to update the README.md if you add features or make changes.
+
+License
+This project is licensed under the MIT License...
